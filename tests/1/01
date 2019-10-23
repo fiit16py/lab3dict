@@ -1,4 +1,11 @@
-4
+n = int(input())
+for i in range(n):
+	rights = input().split()
+m = int (input())
+for j in range(m):
+	query = input()
+
+"""4
 helloworld.exe R X
 pinglog W R
 nya R
@@ -9,3 +16,4 @@ write helloworld.exe
 execute nya
 read pinglog
 write pinglog
+"""
