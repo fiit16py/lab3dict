@@ -10,6 +10,7 @@ mn_key = ''
 for i in repeat.keys():
     if mn == 0:
         mn = repeat[i]
+        mn_key = i
     if repeat[i] < mn:
         mn_key = i
         mn = repeat[i]
