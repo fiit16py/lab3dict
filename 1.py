@@ -1,8 +1,18 @@
-
 perms= {}
 n=int(input())
 for i in range(n):
-	rights=input().split()
+	perm=input().split()
+	file=perm[0]
+	perms[file]=perm[1:]
+
 m =int(input())
+opcode = {'read':'R',
+			'write':'W',
+			'execute':'X'}
 for j in range(m):
-		query= input()
+		operation,file = input().split()
+		code =opcode[operation]
+		if code in perms[file]:
+			print("OK")
+		else:
+			print("Access denied")
