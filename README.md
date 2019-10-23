@@ -16,13 +16,13 @@
 #### Example Input
 
     1
-    abacaba X
+    abacaba R X
     3
     read abacaba
     write abacaba
     execute abacaba
 
 #### Example Output
-    Access denied
+    OK
     Access denied
     OK
