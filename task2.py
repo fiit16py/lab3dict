@@ -1,15 +1,16 @@
 def get_second(var):
     return var[1]
 
+l = [int(_) for _ in input().split()]
 d = {}
-while True:
-    n = int(input())
-    if n == 0:
+for i in range(len(l)):
+    if l[i] == 0:
+        d[l[i]] = 1
         break
-    if n in d:
-        d[n] += 1
+    if l[i] in d:
+        d[l[i]] += 1
     else:
-        d[n] = 1
+        d[l[i]] = 1
 d = list(d.items())
 d.sort(key=get_second)
 i = 1
