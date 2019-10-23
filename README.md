@@ -16,13 +16,24 @@
 #### Example Input
 
     1
-    abacaba X
+    abacaba R X
     3
     read abacaba
     write abacaba
     execute abacaba
 
 #### Example Output
-    Access denied
+    OK
     Access denied
     OK
+
+
+### 2. Права доступа
+Вводятся положительные целые числа, количество заранее неизвестно, ввод завершается нулем. Вывести максимальное из чисел, которые встречаются минимальное число раз.
+
+#### Example Input
+
+    6 8 6 8 6 3 3 8 3 3 8 6 6 6 9 9 9 9 9
+
+#### Example Output
+    8
